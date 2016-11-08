@@ -1,4 +1,4 @@
-# API caching
+# API caching result/response
 
 This caching system has been built to be able to cache API requests from any website that often returns json results or XML results.
 
@@ -9,6 +9,12 @@ This item can use 3 types of different storages: SQLite, file system and MySQL.
 - Speed up your website by caching strategic data.
 
 - Avoid being rejected by API providers by limiting requests.
+
+- Can cache XMLs, json, PHP arrays, variables and even HTML .
+
+- No configuration if used with the file system or SQLite.
+
+- Define for how long a data should be cached.
 
 ###Cache a data for 120 seconds:
 $c1 = new Yp_cache();
@@ -22,3 +28,5 @@ $c1->cache_delete(array(‘key’=>‘123’));
 
 ###Delete all cached data:
 $c1->cache_flush();
+
+

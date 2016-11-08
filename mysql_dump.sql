@@ -1,0 +1,7 @@
+CREATE TABLE  `yp_caching` (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`data_key` VARCHAR( 200 ) NOT NULL ,
+`data` LONGTEXT NOT NULL ,
+`data_type` VARCHAR( 12 ) NOT NULL ,
+`data_expire` VARCHAR( 12 ) NOT NULL
+) ENGINE = MYISAM ;
